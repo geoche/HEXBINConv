@@ -1,18 +1,15 @@
 package com.company;
-
-import jdk.swing.interop.SwingInterOpUtils;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
     /**
      *
-     *     7. [5] Konwersje liczb miedzy systemami liczbowymi Bin2Dec  i odwrotnie, Hex2Dec i odwrotnie.
+     *     Konwersje liczb miedzy systemami liczbowymi Bin2Dec  i odwrotnie, Hex2Dec i odwrotnie.
      *     Program udostępnia tekstowe menu pozwalające wybrać rodzaj operacji.
      *     Należy zadbać o odpowiednie formatowanie wyświetlanych informacji.
-     *      a. Dodatkową funkcjonalnością jest możliwość wygenerowania liczby zapisanej dziesiętnie w dowolnym systemie liczbowym.
-     *      Użytkownik w takiej sytuacji jako parametr, oprócz liczby, podaje cyfrę (liczbę) będącą podstawą systemu (dla Hex podstawa = 16, dla Bin = 2)
+     *
+     *     a. Dodatkową funkcjonalnością jest możliwość wygenerowania liczby zapisanej dziesiętnie w dowolnym systemie liczbowym.
+     *     Użytkownik w takiej sytuacji jako parametr, oprócz liczby, podaje cyfrę (liczbę) będącą podstawą systemu (dla Hex podstawa = 16, dla Bin = 2)
      */
 
     public static void main(String[] args) {
