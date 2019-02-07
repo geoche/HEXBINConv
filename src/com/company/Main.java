@@ -21,16 +21,14 @@ public class Main {
         Scanner scn = new Scanner(System.in);
         char[] alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
         //for other op-s
-        String hexValue = "";
-        int binValue = 0;
-        int decValue = 0;
-        int decValueInt = 0;
-        String value = "";
+
+        String value;
+
         //for DEC2ANY
-        int decVal = 0;
-        int operation = -1;
+        int decVal;
+        int operation;
         int numSys = 0;
-        String result = "";
+        StringBuilder result = new StringBuilder();
         boolean isNegative = false;
 
         //ENTERING NUMBER
@@ -92,19 +90,15 @@ public class Main {
                 }
 
                 while (decVal > numSys){
-                    if (decVal < numSys)
-                        System.out.println(decVal+result);
-                    else {
-                        result = alphabet[decVal % numSys] + result;
-                        decVal = (decVal - decVal % numSys) / numSys;
-                        }
+                    result.insert(0, alphabet[decVal % numSys]);
+                    decVal = (decVal - decVal % numSys) / numSys;
                 }
                 System.out.println();
-                if (isNegative == true){
-                    System.out.println("-"+Integer.toString(decVal)+result);
+                if (isNegative){
+                    System.out.println("-"+decVal+result);
                 }
                 else
-                    System.out.println(Integer.toString(decVal)+result);
+                    System.out.println(decVal+ result.toString());
             default:
                 break;
 
