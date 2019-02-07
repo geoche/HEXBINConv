@@ -99,6 +99,7 @@ public class Main {
                         decVal = (decVal - decVal % numSys) / numSys;
                         }
                 }
+                System.out.println();
                 if (isNegative == true){
                     System.out.println("-"+Integer.toString(decVal)+result);
                 }
